@@ -27,7 +27,19 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
+.view-section.hidden {
+    display: none !important;
+}
+
+.view-section {
+    display: block;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Outfit', sans-serif;
 }
 
@@ -48,7 +60,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-.ui-layer > * {
+.ui-layer>* {
     pointer-events: auto;
 }
 
@@ -128,8 +140,15 @@ h1, h2, h3, h4 {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .glow-text {
@@ -140,9 +159,11 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 ::-webkit-scrollbar-track {
     background: rgba(15, 23, 42, 0.5);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--accent-indigo);
     border-radius: 10px;

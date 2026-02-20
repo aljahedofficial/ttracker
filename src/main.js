@@ -56,7 +56,7 @@ class ThesisTracker {
   setupEventListeners() {
     // Navigation
     document.querySelectorAll('.nav-tab').forEach(tab => {
-      tab.addEventListener('click', (e) => this.switchView(e.target.dataset.view));
+      tab.addEventListener('click', (e) => this.switchView(e.currentTarget.dataset.view));
     });
 
     // Actions
