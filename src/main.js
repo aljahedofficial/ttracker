@@ -120,6 +120,7 @@ class ThesisTracker {
                     </div>
                 </td>
                 <td class="p-4 hidden lg:table-cell text-xs text-slate-500 italic max-w-xs truncate">${item.concepts}</td>
+                <td class="p-4 text-xs font-bold text-emerald-400/80">${item.function}</td>
                 <td class="p-4 text-xs font-semibold text-purple-400/80">${item.paper}</td>
                 <td class="p-4">
                     <button class="text-slate-600 hover:text-white transition-colors" onclick="this.closest('tr').nextElementSibling.classList.toggle('hidden')">
@@ -140,8 +141,8 @@ class ThesisTracker {
                 <td colspan="7" class="p-6">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="space-y-1">
-                            <span class="text-[10px] uppercase font-black text-slate-600 tracking-widest">Theoretical Function</span>
-                            <p class="text-sm text-emerald-400 font-medium">${item.function}</p>
+                            <span class="text-[10px] uppercase font-black text-slate-600 tracking-widest">Theoretical Depth</span>
+                            <p class="text-sm text-slate-400 font-medium">${item.concepts}</p>
                         </div>
                         <div class="space-y-1">
                             <span class="text-[10px] uppercase font-black text-slate-600 tracking-widest">Target Contribution</span>
